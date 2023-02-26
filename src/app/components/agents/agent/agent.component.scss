@@ -1,0 +1,59 @@
+@import "../../../../main-styles.scss";
+
+.agent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  figure {
+
+    img {
+      width: auto;
+      height: 600px;
+    }
+  }
+
+  .content {
+    color: $white;
+    margin-top: 50px;
+    font-weight: 800;
+
+    h1 {
+      font-family: "Valorant";
+      font-size: 72px;
+      font-weight: normal;
+      letter-spacing: 5px;
+      margin-bottom: 15px;
+    }
+
+    .role {
+      margin-bottom: 30px;
+
+      span {
+        display: block;
+      }
+
+      h2 {
+        font-size: 32px;
+        text-transform: uppercase;
+      }
+    }
+
+    .description {
+      span {
+        display: block;
+      }
+
+      p {
+        width: 500px;
+        text-align: justify;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+
+span {
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}

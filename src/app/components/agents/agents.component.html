@@ -1,0 +1,17 @@
+<div class="agents-container">
+
+  <div class="agents-list-container">
+    <ul class="agents-list">
+      <li *ngFor="let agent of agentData$ | async">
+        <a id="{{ agent.uuid }}" routerLink="/agents/{{agent.uuid}}">{{ agent.displayName }}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="agent-container">
+    <div>
+      <app-agent></app-agent>
+    </div>
+  </div>
+
+</div>

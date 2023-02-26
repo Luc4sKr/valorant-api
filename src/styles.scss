@@ -10,4 +10,13 @@
 body {
   width: 100vw;
   height: 100vh;
+  background-color: $white;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+  background-color: aqua;
 }
