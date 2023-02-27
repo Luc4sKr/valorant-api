@@ -2,16 +2,22 @@
 
   <div class="agents-list-container">
     <ul class="agents-list">
-      <li *ngFor="let agent of agentData$ | async">
-        <a id="{{ agent.uuid }}" routerLink="/agents/{{agent.uuid}}">{{ agent.displayName }}</a>
+      <li *ngFor="let agent of agentData$ | async" id="{{ agent.uuid }}" (click)="agentButtonClick(agent.uuid)">
+        {{ agent.displayName }}
       </li>
     </ul>
   </div>
 
   <div class="agent-container">
-    <div>
-      <app-agent></app-agent>
+    <div *ngIf="singleAgent.data.uuid != ''; else nullAgent">
+      <app-agent [singleAgent]="singleAgent"></app-agent>
     </div>
   </div>
+
+  <ng-template #nullAgent>
+    <div id="nullAgent">
+      <h1>Selecione um Agente</h1>
+    </div>
+  </ng-template>
 
 </div>

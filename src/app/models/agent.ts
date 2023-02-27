@@ -1,5 +1,5 @@
 export class Agent {
-  uuid?: string;
+  uuid: string = "";
   displayName?: string;
   description?: string;
   developerName?: string
@@ -11,15 +11,6 @@ export class Agent {
   constructor(obj: Partial<Agent>) {
     Object.assign(this, obj);
   }
-
-  /*constructor(uuid: string,
-              displayName: string,
-              description: string,
-              developerName: string,
-              displayIcon: string,
-              bustPortrait: string,
-              background: string,
-              role: Role) { }*/
 }
 
 class Role {
@@ -31,9 +22,4 @@ class Role {
   constructor(obj: Partial<Role>) {
     Object.assign(this, obj);
   }
-
-  /*constructor(uuid: string,
-              displayName: string,
-              description: string,
-              displayIcon: string) { }*/
 }
