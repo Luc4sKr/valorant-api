@@ -1,5 +1,5 @@
-import { SingleAgentReturn } from './../../../models/single-agent-return';
-import { AgentsReturn } from './../../../models/agents-return';
+import { SingleAgentReturn } from '../../../models/agent/single-agent-return';
+import { AgentsReturn } from '../../../models/agent/agents-return';
 import { ApiService } from './../../../service/api.service';
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -18,6 +18,6 @@ export class AgentComponent implements OnInit {
               public route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    
+
   }
 }

@@ -1,6 +1,6 @@
-import { SingleAgentReturn } from './../../models/single-agent-return';
+import { SingleAgentReturn } from '../../models/agent/single-agent-return';
 import { ActivatedRoute } from '@angular/router';
-import { Agent } from './../../models/agent';
+import { Agent } from '../../models/agent/agent';
 import { ApiService } from './../../service/api.service';
 import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
