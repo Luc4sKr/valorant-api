@@ -9,6 +9,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AgentsComponent } from './components/agents/agents.component';
 import { AgentComponent } from './components/agents/agent/agent.component';
+import { ArsenalComponent } from './components/arsenal/arsenal.component';
+import { WeaponComponent } from './components/arsenal/weapon/weapon.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AgentComponent } from './components/agents/agent/agent.component';
     NavbarComponent,
     HomeComponent,
     AgentsComponent,
-    AgentComponent
+    AgentComponent,
+    ArsenalComponent,
+    WeaponComponent
   ],
   imports: [
     BrowserModule,
