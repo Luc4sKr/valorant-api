@@ -4,14 +4,10 @@
   </div>
 
   <div class="weapons">
-    <div *ngFor="let weapon of weaponData$ | async" class="weapon-container">
-      <div class="weapon-name-container">
-        <h3 class="weapon-name">{{ weapon.displayName }}</h3>
-      </div>
 
-      <figure class="img-container">
-        <img id="{{ weapon.displayName }}" src="{{ weapon.displayIcon }}" alt="{{ weapon.displayName }} Image">
-      </figure>
-    </div>
+      <app-weapon *ngFor="let weapon of weaponData$ | async"
+      [weapon]="weapon">
+      </app-weapon>
+
   </div>
 </div>

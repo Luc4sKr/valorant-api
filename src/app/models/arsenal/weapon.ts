@@ -8,6 +8,7 @@ export class Weapon {
   assetPath?: string;
   weaponStats?: WeaponStats;
   skins?: Skinks;
+  shopData?: ShopData;
 
   constructor(obj: Partial<Weapon>) {
     Object.assign(this, obj)
@@ -43,6 +44,16 @@ class Skinks {
   assetPath?: string;
 
   constructor(obj: Partial<Skinks>) {
+    Object.assign(this, obj)
+  }
+}
+
+class ShopData {
+  cost?: number;
+  category?: string;
+  categoryText?: string;
+
+  constructor(obj: Partial<ShopData>) {
     Object.assign(this, obj)
   }
 }

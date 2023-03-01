@@ -19,58 +19,9 @@
   .weapons {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #000;
+    //background-color: #000;
   }
 }
 
 
-.weapon-container {
-  height: 280px;
-  margin: 1px;
 
-  background-color: $white;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 80px auto;
-
-
-  .weapon-name-container {
-    margin-top: 10px;
-    margin-left: 20px;
-
-    .weapon-name {
-      text-transform: uppercase;
-      font-size: 42px;
-    }
-  }
-
-
-  .img-container {
-    width: 100%;
-    position: relative;
-
-    img {
-      width: 300px;
-      height: auto;
-
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 30px
-    }
-  }
-}
-
-
-#Frenzy {
-  width: 200px;
-}
-
-#Classic {
-  width: 200px;
-}
-
-#Sherif {
-  width: 200px;
-}

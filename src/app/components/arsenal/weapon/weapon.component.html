@@ -1,1 +1,30 @@
-<p>weapon works!</p>
+<div class="weapon-container" (mouseenter)="containerEnter()" (mouseleave)="containerLeave()">
+  <div class="weapon-name-container">
+    <h3 class="weapon-name">{{ weapon.displayName }}</h3>
+  </div>
+
+  <div class="all-stats" [ngStyle]="{'display': display}">
+    <div class="weapon-stats">
+      <h4>Estatísticas de armas</h4>
+      <div class="stats">
+        <span>Cadência de tiro: {{ weapon.weaponStats?.fireRate }}</span>
+        <span>Munição: {{ weapon.weaponStats?.magazineSize }}</span>
+        <span>Multiplicador de velocidade: {{ weapon.weaponStats?.runSpeedMultiplier }}</span>
+        <span>Tempo para equipar: {{ weapon.weaponStats?.equipTimeSeconds }} segundos</span>
+        <span>Tempo para recarregar: {{ weapon.weaponStats?.reloadTimeSeconds }} segundos</span>
+      </div>
+    </div>
+
+    <div class="shop-data">
+      <h4>Dados da loja</h4>
+      <div class="data">
+        <span>Preço: {{ weapon.shopData?.cost }}</span>
+        <span>Categoria: {{ weapon.shopData?.categoryText }}</span>
+      </div>
+    </div>
+  </div>
+
+  <figure class="img-container">
+    <img id="{{ weapon.displayName }}" src="{{ weapon.displayIcon }}" alt="{{ weapon.displayName }} Image">
+  </figure>
+</div>
