@@ -18,7 +18,7 @@ $hover: #{adjust-hue($white, 45deg)};
       color: #ffffff;
       font-weight: normal;
       margin-top: 20px;
-      font-size: 86px;
+      font-size: $large-font;
 
       &:hover {
         color: $light-red;

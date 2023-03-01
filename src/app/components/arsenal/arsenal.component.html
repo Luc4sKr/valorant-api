@@ -1,0 +1,17 @@
+<div class="arsenal-container">
+  <div class="title-container">
+    <h1>Arsenal</h1>
+  </div>
+
+  <div class="weapons">
+    <div *ngFor="let weapon of weaponData$ | async" class="weapon-container">
+      <div class="weapon-name-container">
+        <h3 class="weapon-name">{{ weapon.displayName }}</h3>
+      </div>
+
+      <figure class="img-container">
+        <img id="{{ weapon.displayName }}" src="{{ weapon.displayIcon }}" alt="{{ weapon.displayName }} Image">
+      </figure>
+    </div>
+  </div>
+</div>
